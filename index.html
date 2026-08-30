@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Alimentación | Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado / Menú de Navegación -->
+    <header>
+        <div class="logo">🍽️ Sabor & Sancochado</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (Principal) -->
+    <section id="inicio" class="hero">
+        <h1>Alimentación Corporativa y Eventos</h1>
+        <p>Desayunos, almuerzos, cenas y coffee breaks hechos a tu medida.</p>
+        <a href="#contacto" class="btn-cta">Cotiza Ahora</a>
+    </section>
+
+    <!-- Sección Quiénes Somos / Nosotros -->
+    <section id="nosotros" class="nosotros">
+        <div class="nosotros-contenido">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos una empresa apasionada por la gastronomía, especializada en brindar soluciones de alimentación integral para oficinas, empresas y eventos especiales. Nos enfocamos en la frescura, el sabor casero y el cumplimiento estricto de los estándares de higiene y puntualidad.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="grid-servicios">
+            <div class="card">
+                <h3>☕ Desayunos</h3>
+                <p>Opciones ejecutivas y saludables para empezar el día con energía.</p>
+            </div>
+            <div class="card">
+                <h3>🍲 Almuerzos</h3>
+                <p>Menús diarios variados y balanceados para oficinas y empresas.</p>
+            </div>
+            <div class="card">
+                <h3>🌙 Cenas</h3>
+                <p>Planes nocturnos y catering para eventos especiales.</p>
+            </div>
+            <div class="card">
+                <h3>🥐 Coffee Breaks</h3>
+                <p>Estaciones de café, dulces y salados para capacitaciones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto (WhatsApp y Formulario) -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos y Cotiza</h2>
+        <p>¿Listo para llevar el mejor sabor a tu empresa? Escríbenos por WhatsApp o déjanos tus datos.</p>
+        
+        <!-- Botón de WhatsApp -->
+        <div style="margin-bottom: 30px;">
+            <button id="btnWhatsApp" class="btn-whatsapp">💬 Hablar por WhatsApp</button>
+        </div>
+
+        <!-- Formulario de Contacto Clásico -->
+        <form id="formContacto" class="form-contacto">
+            <h3>O envíanos un mensaje</h3>
+            <div class="form-grupo">
+                <input type="text" id="nombre" placeholder="Tu Nombre o Empresa" required>
+            </div>
+            <div class="form-grupo">
+                <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+            </div>
+            <div class="form-grupo">
+                <select id="servicioInteres">
+                    <option value="Desayuno">Desayuno</option>
+                    <option value="Almuerzo">Almuerzo</option>
+                    <option value="Cena">Cena</option>
+                    <option value="Coffee Break">Coffee Break</option>
+                    <option value="Otro">Otro servicio integral</option>
+                </select>
+            </div>
+            <div class="form-grupo">
+                <textarea id="mensaje" rows="4" placeholder="Cuéntanos los detalles (fecha, cantidad de personas...)" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
