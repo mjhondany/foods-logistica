@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODS LOGISTICA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado / Menú de Navegación -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="FOODS LOGISTICA Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (Principal) -->
+    <section id="inicio" class="hero">
+        <h1>Alimentación Corporativa y Eventos</h1>
+        <p>Desayunos, almuerzos, cenas y coffee breaks hechos a tu medida.</p>
+        <a href="#contacto" class="btn-cta">Cotiza Ahora</a>
+    </section>
+
+    <!-- Sección Quiénes Somos / Nosotros -->
+    <section id="nosotros" class="nosotros">
+        <div class="nosotros-contenido">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos una empresa apasionada por la gastronomía, especializada en brindar soluciones de alimentación integral para oficinas, empresas y eventos especiales. Nos enfocamos en la frescura, el sabor casero y el cumplimiento estricto de los estándares de higiene y puntualidad.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios y Platos Destacados -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Platos y Servicios</h2>
+        <p class="subtitulo-servicios">Gastronomía de calidad corporativa lista para tu empresa o evento.</p>
+        
+        <div class="grid-servicios">
+            <div class="card">
+                <div class="card-img-placeholder">☕</div>
+                <h3>Desayunos Ejecutivos</h3>
+                <p><strong>Ideal para:</strong> Directorios y reuniones matutinas.</p>
+                <p class="detalle-menu">Incluye: Jugos naturales, café pasado, selección de panes artesanales y fruta fresca de estación.</p>
+                <a href="#contacto" class="btn-card">Cotizar Menú</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-img-placeholder">🍲</div>
+                <h3>Almuerzos Corporativos</h3>
+                <p><strong>Ideal para:</strong> Concesionarios y oficinas.</p>
+                <p class="detalle-menu">Incluye: Entrada, plato de fondo balanceado (opción carnes, pollo y vegetariana), bebida y postre.</p>
+                <a href="#contacto" class="btn-card">Cotizar Menú</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-img-placeholder">🌙</div>
+                <h3>Cenas y Gala</h3>
+                <p><strong>Ideal para:</strong> Eventos nocturnos o congresos.</p>
+                <p class="detalle-menu">Incluye: Platos principales gourmet, entradas finas, bebidas y atención personalizada.</p>
+                <a href="#contacto" class="btn-card">Cotizar Menú</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-img-placeholder">🥐</div>
+                <h3>Coffee Breaks</h3>
+                <p><strong>Ideal para:</strong> Capacitaciones y talleres.</p>
+                <p class="detalle-menu">Incluye: Estación permanente de café, infusiones, pastelería fina dulce y salada.</p>
+                <a href="#contacto" class="btn-card">Cotizar Menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial-card">
+            <p>"El servicio de coffee break y los almuerzos ejecutivos que contratamos superaron nuestras expectativas. Puntuales y comida muy fresca."</p>
+            <h4>— Gerencia de Recursos Humanos</h4>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto con Doble Opción (WhatsApp y Correo) -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos y Haz tu Cotización</h2>
+        <p>Elige tu método preferido: escríbenos al instante por WhatsApp o envíanos los detalles por correo.</p>
+        
+        <!-- Opción 1: Botón Directo WhatsApp -->
+        <div class="contacto-botones">
+            <button id="btnWhatsApp" class="btn-whatsapp">💬 Cotizar Rápido por WhatsApp</button>
+        </div>
+
+        <div class="separador-o">
+            <span>O prefiere tu cotización formal por correo</span>
+        </div>
+
+        <!-- Opción 2: Formulario para Correo (Conectado a Formspree vía JavaScript) -->
+        <form id="formCorreo" action="https://formspree.io/f/mbgjlwlq" method="POST" class="form-contacto">
+            <h3>Formulario para Correo</h3>
+            
+            <div class="form-grupo">
+                <input type="text" name="nombre" placeholder="Tu Nombre o Empresa" required>
+            </div>
+            
+            <div class="form-grupo">
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+            </div>
+            
+            <div class="form-grupo">
+                <select name="servicio">
+                    <option value="Desayuno Ejecutivo">Desayunos Ejecutivos</option>
+                    <option value="Almuerzo Corporativo">Almuerzos Corporativos</option>
+                    <option value="Cena y Gala">Cenas y Gala</option>
+                    <option value="Coffee Break">Coffee Breaks</option>
+                    <option value="Otro Servicio">Otro servicio integral</option>
+                </select>
+            </div>
+            
+            <div class="form-grupo">
+                <textarea name="mensaje" rows="4" placeholder="Cuéntanos los detalles (fecha, cantidad de porciones...)" required></textarea>
+            </div>
+            
+            <button type="submit" id="btnEnviarCorreo" class="btn-enviar">✉️ Enviar Cotización por Correo</button>
+            <p id="mensajeExito" style="display: none; color: #27ae60; font-weight: bold; text-align: center; margin-top: 15px;">¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.</p>
+        </form>
+    </section>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Celular</h4>
+                <p>978 225 778</p>
+            </div>
+            <div class="footer-col">
+                <h4>Correo</h4>
+                <p>contacto@foodslogistica.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Ubicación</h4>
+                <p>Lima, Perú</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; FOODS LOGISTICA | SAC</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp (Siempre visible) -->
+    <a href="#" id="btnWhatsAppFlotante" class="whatsapp-flotante" target="_blank" title="Escríbenos por WhatsApp">
+        💬
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
